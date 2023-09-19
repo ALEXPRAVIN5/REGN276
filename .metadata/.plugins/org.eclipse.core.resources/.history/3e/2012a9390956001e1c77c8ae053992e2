@@ -1,0 +1,48 @@
+package org.lens;
+import org.pom.POM;
+import org.base.BaseClass;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Kart extends BaseClass {
+
+	public static void main(String[] args) {
+		initDriver("Chrome");
+		getURL("https://www.ebay.com/");
+		wait(5);
+		//---POM object----
+		POM pm=new POM();
+		WebElement signIn = pm.getSignIn();
+		WebElement userBox = pm.getUserBox();
+		WebElement userContinue = pm.getUserContinue();
+		WebElement passBox = pm.getPassBox();
+		WebElement login = pm.getLogin();
+		WebElement moveToSignOut = pm.getMoveToSignOut();
+		WebElement signOut = pm.getSignOut();
+		
+		
+		
+		
+		
+		
+		//---Sign-in
+		signIn.click();
+		
+		//---username
+		userBox.sendKeys("alexpravin0212@gmail.com");
+		userContinue.click();
+		
+		//---Password
+		passBox.sendKeys("Passingwords*13");
+		
+		moveTo(moveToSignOut);
+		moveToCick(signOut);
+		
+		
+		
+	}
+
+}

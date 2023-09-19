@@ -1,0 +1,20 @@
+package org.lens;
+
+import org.base.BaseClass;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Kart extends BaseClass {
+
+	public static void main(String[] args) {
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		getURL("https://www.ebay.com/");
+		wait(5);
+		
+		
+	}
+
+}

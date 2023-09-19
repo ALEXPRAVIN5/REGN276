@@ -1,0 +1,36 @@
+package org.pom;
+
+import org.base.BaseClass;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+
+public class POM extends BaseClass {
+	
+	@FindBy(id="#userid")
+	private WebElement userBox;
+	
+	public WebElement getUserbox() {
+		return userBox;
+	}
+	
+	
+	
+	
+	@FindBy(id="#signin-continue-btn")
+	public static WebElement userContinue;
+	
+	
+	@FindBy(id="#pass")
+	public static WebElement passBox;
+	@FindBy(id="#sgnBt")
+	public static WebElement login;
+	
+	
+	@FindBy(id="#gh-gb")
+	public static WebElement moveToSignOut;
+	@FindBy(xpath="//a[text()='Sign out']")
+	public static WebElement signOut;
+
+	
+}

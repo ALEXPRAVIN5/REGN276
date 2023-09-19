@@ -1,0 +1,21 @@
+package org.pom;
+
+import org.base.BaseClass;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+
+public class POM extends BaseClass {
+	@FindBy(id="gh-gb")
+	public static WebElement moveToSignOut;
+	@FindBy(xpath="//a[text()='Sign out']")
+	public static WebElement signOut;
+
+	public static WebElement getSignOut() {
+		return signOut;
+	}
+
+	public static WebElement getMoveToSignOut() {
+		return moveToSignOut;
+	}
+}

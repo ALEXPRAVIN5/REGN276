@@ -1,0 +1,12 @@
+package org.lens;
+
+import org.base.BaseClass;
+
+public class Kart extends BaseClass {
+
+	public static void main(String[] args) {
+		initDriver("Chrome");
+		getURL("");
+	}
+
+}

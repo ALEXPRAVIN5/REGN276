@@ -1,0 +1,22 @@
+package org.lens;
+
+import org.base.BaseClass;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Kart extends BaseClass {
+
+	public static void main(String[] args) {
+		initDriver("Chrome");
+		getURL("https://www.ebay.com/");
+		wait(5);
+		//---Sign-in
+		driver.findElement(By.xpath("(//a[text()='Sign in'])[1]")).click();
+		
+		
+	}
+
+}

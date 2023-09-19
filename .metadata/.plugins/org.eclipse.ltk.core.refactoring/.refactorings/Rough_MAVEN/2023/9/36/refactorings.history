@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;Rough_Tests&apos; to &apos;org.roughtests&apos;&#x0D;&#x0A;- Original project: &apos;Rough_MAVEN&apos;&#x0D;&#x0A;- Original element: &apos;Rough_MAVEN/src/test/java/Rough_Tests&apos;&#x0D;&#x0A;- Renamed element: &apos;Rough_MAVEN/src/test/java/org.roughtests&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings&#x0D;&#x0A;- Rename subpackages of the package" description="Rename package &apos;Rough_Tests&apos;" flags="589830" hierarchical="true" id="org.eclipse.jdt.ui.rename.package" input="/src\/test\/java&lt;Rough_Tests" name="org.roughtests" qualified="false" references="true" stamp="1694069502135" textual="false" version="1.0"/>
+</session>
